@@ -4,7 +4,9 @@ FRB simulations using MPA galaxy sims and PATH localization tool (SURF project)
 ## General Usage Info 
 `sim_frbs.py` and `path_help.py` are used to simulate frbs in a given catalog and and analyze localization of those frbs using PATH. The catalog currently in use is from the Millinium project the query is included in `path_sims_example.ipynb` which shows the module usage. 
 
-###(OUTDATED: needs updating)
+(OUTDATED: needs updating)
+
+
 `MPApath_help` is a python module with functions designed to simulate FRBs in the sky based on a number of priors and then attempt to identify the true host galaxy using the PATH code (Aggarwal+2021). An example of the usage of the functions is found in the jupyter notebook `MPApath_sims.ipynb`. 
 
 This code requires the PATH package to be installed which can be found [here](https://github.com/FRBs/astropath), and the [paper](https://arxiv.org/abs/2102.10627). The only other neccessary tool to make this run is a galaxy calalog of some kind. The functions take in a pandas DataFrame with the baseline requirements of ra (deg), dec (deg), r-band mag (AB), and apparent disk size (''). Currently there is input for galaxy sfr and total stellar mass as well as more to come. 
